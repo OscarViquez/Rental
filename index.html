@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&family=Lobster&family=Muli:ital,wght@0,200;0,300;0,400;1,200;1,300&family=Playfair+Display:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- update with these fonts  -->
+    <link rel="stylesheet" type="text/css" href="client/public/css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script type='text/javascript'
+        src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap&branch=experimental&key=Am9BSXZDCZDntVv9o7hSLKtc_JcSJyrnLApihCifZhZ0d3T82HejRFUAnHLQ59Ua'
+        async defer></script>
+    <script
+        src="https://cdn.polyfill.io/v2/polyfill.min.js?features=fetch,requestAnimationFrame,Element.prototype.classList,URL"></script>
+    <script src="https://kit.fontawesome.com/51a8c67162.js" crossorigin="anonymous"></script>
+
+
+
+    <title>Welcome!</title>
+</head>
+
+<body>
+
+    <!-- NAVIGATION MENU ========================================================= -->
+    <header>
+        <div class="logo">
+            <img src="" alt="logo">
+        </div>
+        <button class="nav-toggle">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav_list">
+                <li class="nav__buttons">
+                    <a href="#about" class="nav__link">
+                        <h2 class="nav__link--title">About this place</h2>
+                    </a>
+                </li>
+
+                <li class="nav__buttons">
+                    <a href="#ameneites" class="nav__link">
+                        <h2 class="nav__link--title">Ameneites</h2>
+                    </a>
+                </li>
+
+                <li class="nav__buttons">
+                    <a href="#safety" class="nav__link">
+                        <h2 class="nav__link--title">Safety</h2>
+                    </a>
+                </li>
+
+                <li class="nav__buttons">
+                    <a href="#rooms" class="nav__link">
+                       <h2 class="nav__link--title"> Rooms </h2>
+                    </a>
+                </li>
+
+                <li class="nav__buttons">
+                    <a href="#location" class="nav__link">
+                        <h2 class="nav__link--title">Location</h2>
+                    </a>
+                </li>
+
+                <!-- <li class="nav__buttons">
+                    <a href="#policies" class="nav__link"> Policies </a>
+                </li> -->
+                <!-- <li class="nav__buttons">
+                    <a href="#reviews" class="nav__link"> Reviews </a>
+                </li> -->
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- introduction / Front page =========================================================-->
+    <!-- Parallax 1 ---------------------------------->
+    <section class="intro" id="front">
+
+        <h1 class="section__title section__pitch-intro"> Looking for a place to stay ...</h1>
+        <p class="section__subtitle section__subtitle-pitch"> pitch line</p>
+        <img src="" alt="img of house">
+        <h2 class="section__title"> Price: $550 per night </h2>
+
+        <h4> Check-in / Check out time </h4>
+        <ul>
+            <li> Check-in after 4:00PM </li>
+            <li> Check out before 10:00AM</li>
+        </ul>
+
+    </section>
+    <!-- About this place =================================================================-->
+    <!-- Parallax 2 ---------------------------------->
+    <section class="section__about" id="about">
+        <h2 class="section__title section__title-about"> About this place <i class="fas fa-info-circle"></i> </h2>
+        <button onclick="hideToggle()"> Show more </button>
+        <p id="long__paragraph"> "Heron on Eleven"
+            22 Stoney Creek Road
+            Coastalcandb
+
+            Our Beaches in Sea Pines are open and BEAUTIFUL! The perfect place to be outdoors with fresh air and it's
+            easy to maintain social distance outside. We are hexperiencing GORGEOUS weather and our golf courses, bike
+            paths, tennis courts and beaches are open. There is no better place to be than HHI right now. Make the most
+            of these difficult times and enjoy some special family vacation time on the island.</br>
+            <br>
+            Walk to Harbour Town shops, restaurants, entertainment, marina, water sports, playground, the lighthouse,
+            bakery, golf and tennis! We are the closets single family home residential street to Harbour Town in all of
+            Sea Pines!</br>
+            <br>
+            Trolley to the Sea Pines Beach Club that you have access to as our guest! The Trolley stop is near the end
+            of our street at the Harbour Town Pool. Easy and fun way to beach it, no parking hassles in the summer!</br>
+            <br>
+            THE BEST POOL & GOLF VIEWS with awesome outdoor FIREPIT and party lights on the front deck plus custom two
+            story wood burning fireplace in the vaulted ceiling family room! All one level, NO STAIRS! All of the
+            bedrooms have a great view with oversized sliding glass doors along the full wall of each bedroom.</br>
+            <br>
+            New on the rental market, just listed on VRBO! We purchased this home and updated it Summer 2018. It is a
+            beautiful three bedroom, 3 bath home with a private SALTWATER pool in the heart of Sea Pines Harbour Town on
+            the 11th fairway of the newly renovated, Heron Point Golf Course with STUNNING views! It's an easy walk to
+            the Harbour Town Clubhouse and Harbour Town Marina.</br>
+            <br>
+            We personally own and rent our home, coastalcandb.com, we do NOT charge any additional "Property Manager
+            Fees" or "Administrative Fees". Price includes one Sea Pines gate pass also!</br>
+            <br>
+            Our home has an unbelievably beautiful view of the picture perfect golf course. It is in a peaceful setting
+            with magnificent views on a private, quiet, street with no thru traffic. It is literally steps to the
+            Harbour Town Clubhouse and Golf Course, Sea Pines Raquet Club, the Harbour Town pool and an easy bike ride
+            to The Sea Pines Beach Club! This home has every comfort and amenity you could possibly want for a fabulous,
+            unforgettable vacation and it's all on one floor so no steps to climb or lug children, luggage and groceries
+            up and down!! Enjoy high speed internet while lounging in the back yard around your own private saltwater
+            pool. Yay, free wifi! We can also heat the pool for an additional charge, please see below for additional
+            details.</br>
+            <br>
+            There are 3 large bedrooms and 3 full baths, each with full shower/tub combination. There are two master
+            suites, each with fabulous king-size beds and private baths. One master has a large sliding glass door out
+            to the pool and the other has a large sliding glass door to the private patio/deck. Lots of light in this
+            house but we do have black out curtains in all the bedrooms! The third bedroom is so large it has two
+            wonderful full size beds and a private full bath with a sliding glass door to the private patio/deck. There
+            is also a sleeper sofa in the living room if you need it!</br>
+            <br>
+            It is a bright and open floor plan with lots of light and cathedral ceilings. There is an eat in kitchen
+            with a sliding glass door onto the side patio with a grill for outdoor cooking and the dining room has a
+            sliding glass door to the pool overlooking the golf course. There are gorgeous pool and golf course views
+            from the dinning room, family room and master bedroom! There is also a full size washer and dryer for your
+            use.</br>
+            <br>
+            This home has amazing views, lots of light from floor to ceiling windows and oversized sliding glass doors.
+            Each room has a large sliding glass door that makes it light and bright and gives everyone access to all the
+            many outdoor gathering/lounging areas like the front deck/patio (enjoy a fun game of Corn Hole!) , pool or
+            side patio with grill off the eat in kitchen.</br>
+            <br>
+            Our house is just a five minute walk to the first tee of the RBC Heritage Golf Tournament on Harbour Town
+            Golf Links and all the amenities of Harbour Town including The Harbour Town Lighthouse, boutique shopping,
+            the Harbour Town Marina, Gregg Russell HT playground, the HT Pier (kids can go crabbing!), The Quarterdeck,
+            The Crazy Crab Restaurant and CQ's! No need to deal with parking in Harbour Town or taking a shuttle, YOU
+            CAN JUST WALK OR BIKE!</br>
+            <br>
+            We have a special arrangement with an established and reputable bike rental company for our guests. As our
+            guest you will get a discounted rate, free delivery to the house and free locks and baskets as well. All for
+            around $30/bike for the whole week! Ask us for the discount code.</br>
+            <br>
+            The Harbour Town Yacht Basin/Marina has ALL water sports (SUP, parasailing, kayaking, power boat rental,
+            wave-runners, water skiing, fishing charters, shark fishing, deep sea fishing, dolphin cruises, dinner
+            cruises, sunset cruises, pirate cruises, sailing). ALL WITHIN WALKING DISTANCE!</br>
+            <br>
+            Hop on the Sea Pines Trolley (stops just across from our street at the Harbor Town Pool) for a free and fun
+            ride to the brand new Sea Pines Beach Club or South Beach, no need to deal with beach parking, yay! The
+            brand new Sea Pines Beach Club has clean restrooms, showers, and an outdoor bar and grill overlooking the
+            ocean, outdoor roof top lounge (21 and older), live entertainment and a store to buy suntan lotion,
+            souvenirs and such!</br>
+            <br>
+            Our private saltwater pool can be heated for an additional cost.</br>
+            <br>
+            Please email us regarding Heritage rates.</br>
+            <br>
+            Still have questions?</br>
+            Get a fast response about property amenities, check-in times, and general questions.</br>
+            <br>
+            -Owner
+            <br>
+            Coastal C&B
+
+        </p>
+    </section>
+
+    <!-- Ameeties =================================================================-->
+    <!-- Parallax 3 ---------------------------------->
+    <section class="section_amenities" id="amenities">
+        <h2 class="section__title section__title--amenities"> Amenities <i class="fas fa-house-user"></i> </h2>
+        <p class="section__subtitle section__subtitle-amenities"> Place holder</p>
+
+        <div class="amenities_item">
+
+            <ul>
+
+                <li class="Feature-Item">
+                    Air Conditioning / Heater
+                </li>
+
+                <li class="Feature-Item">
+                    Washer & Dryer
+                </li>
+                <li class="Feature-Item">
+                    Satellite or cable
+                </li>
+
+                <li class="Feature-Item">
+                    TV
+                </li>
+                <li class="Feature-Item">
+                    Internet
+                </li>
+
+                <li class="Feature-Item">
+                    Swimming pool
+                </li>
+
+                <li class="Feature-Item">
+                    Fireplace
+                </li>
+                <li class="Feature-Item">
+                    Telephone
+                </li>
+                <li class="Feature-Item">
+                    Linens Provided
+                </li>
+                <li class="Feature-Item">
+                    Parking (up to 4 vehicles)
+                </li>
+                <li class="Feature-Item">
+                    Iron & Board
+                </li>
+                <li class="Feature-Item">
+                    Hair Dryer
+                </li>
+                <li class="Feature-Item">
+                    Living Room
+                </li>
+                <li class="Feature-Item">
+                    Shampoo, Basic soaps, Toilet paper
+                </li>
+                <li class="Feature-Item">
+                    Gym / Fitness Room / Equipment You can join the Sea Pines Resort Fitness Center at a weekly rate.
+                </li>
+
+
+
+            </ul>
+        </div>
+    </section>
+    <!--Safety =================================================================-->
+    <!-- Parallax 4 ---------------------------->
+    <section class="section-safety" id="safety">
+        <h2 class="section__title section__title--safety"> Safety </h2>
+        <div class="safety-div-list">
+            <ul class="safety-list">
+                <li class="safety-list__item"> Fire Extinguisher </li>
+                <li class="safety-list__item"> Exterior lighting</li>
+                <li class="safety-list__item"> Carbon-monoxide/ smoke detector </li>
+                <li class="safety-list__item"> Deadbolt lock </li>
+                <li class="safety-list__item"> First-aid kit</li>
+            </ul>
+        </div>
+    </section>
+
+    <!--Rooms =================================================================-->
+    <!-- Parallax 5 ---------------------------->
+    <section class="section-rooms" id="rooms">
+        <div id="Rooms">
+            <h2 class="section__title section__title--rooms"> Rooms </h2>
+            <h4 class="section__subtitle--room"> Bedrooms</h4>
+            <p class="section__subtitle"> 3 bedrooms/ Up to 9 people </p>
+
+            <ul class="section-room-list bedroom_list">
+                <li class="section-room-list__item Bedroom-list__item">Bedroom 1 (master) : King size </li>
+                <li>Bedroom 2 (Guest) : King size </li>
+                <li>Bedroom 3 (Guest) : Double size ( 2 separate beds )</li>
+                <li>Convertible Beds/ sleep sofa/ futon : Pull out sleeper </li>
+
+            </ul>
+
+            <h4 class="Rooms__room"> Bathrooms </h4>
+            <ul>
+                <li>Bathroom 1 toilet, combination tub/shower, tub, shower/ Private Bathroom</li>
+                <li>Bathroom 2 toilet, combination tub/shower, tub, shower/ Private Bathroom </li>
+                <li>Bathroom 3 toilet, combination tub/shower, tub, shower/ Private Bathroom</li>
+
+
+            </ul>
+            <h4 class="Rooms__room"> Kitchen </h4>
+            <ul>
+                <li> Dishwasher
+                </li>
+                <li> Refrigerator </li>
+                <li> Stove </li>
+                <li> Oven </li>
+                <li> Microwave</li>
+                <li> Grill</li>
+                <li> Coffee Maker There is both a regular drip coffee maker and a keurig coffee maker </li>
+                <li> Toaster/ Blender</li>
+                <li> Lobster Pot</li>
+                <li> Dishes & Utensils</li>
+                <li> Ice Maker</li>
+                <li> Kettle</li>
+
+            </ul>
+            <h4 class="Rooms__room"> Dining </h4>
+            <ul>
+                <li> Dining Room </li>
+                <li> Dining Area </li>
+                <li> Dining There is a table in the kitchen that seats 4, a dining table that seats 8, 2 outdoor tables
+                    overlooking the pool/patio that seats 10 and a bar area at the kitchen that seats 2.</li>
+
+            </ul>
+            <h4 class="Rooms__room"> Outside </h4>
+            <ul>
+                <li> Balcony - Front deck off 2 of the 3 bedrooms</li>
+                <li> Kayak / Canoe - Can be rented at the Harbour Town Pier, just a short walk from the house</li>
+                <li> Bicycles - We have a negotiated discount rate with a reputable and reliable company that delivers
+                    and picks up the bikes from the house, hassle free! The discounted rate is around $30/wk w/free
+                    locks & baskets!</li>
+                <li> Boat - Can be rented at the Harbour Town Pier, just a short walk from the house.</li>
+                <li> Beach Chairs</li>
+                <li> Beach Towels</li>
+                <li> Porch / Veranda - Pool deck and front deck/porch</li>
+                <li> Deck / Patio - Backyard deck with pool and grill overlooking the golf course. Plus a private deck
+                    on the front of the house you can access from the 2 guest bedrooms and front walkway</li>
+                <li> Outdoor Furniture</li>
+                <li> Tennis - You can rent court time at The Sea Pines Racquet Club right across the street!</li>
+                <li> Golf</li>
+            </ul>
+            <h4 class="Rooms__room"> Entertainment </h4>
+            <ul>
+                <li> Television: There is a television in each bedroom and in the living room</li>
+                <li> Satellite / Cable</li>
+                <li> Books</li>
+                <li> Games for Kids </li>
+                <li> Toys </li>
+                <li> Video Library</li>
+            </ul>
+
+            <h4 class="Rooms__room"> Pool </h4>
+            <ul>
+                <li> Outdoor Pool </li>
+                <li> Heated Pool </li>
+                <li> Private Pool - Private heated pool overlooking the golf course (extra charge to heat pool).
+                    $800/week or $200 for first night and $100 each additional night to heat the pool to 85 degrees.
+                    Most owners heat to 80!</li>
+                <li> Communal Pool - You can join the Harbour Town pool, but why would you - you'll have your own
+                    private pool! </li>
+            </ul>
+
+        </div>
+    </section>
+
+    <!--Location =================================================================-->
+    <!-- Parallax 6 ------------------------------>
+    <section class="section_location" id="location">
+        <h2 class="section__title section__title--location"> Location <i class="fas fa-map-marked-alt"></i> </h2>
+        <h4> Location Type</h4>
+        <ul>
+            <li> Beach/ Near the Ocean</li>
+            <li> Resort ( Inside the prestigious Sea Pines Resort)</li>
+            <li> Village ( walking distance to harbour Town )</li>
+            <li> Water (We are right near (walking distance) the Harbour Town Waterfront)</li>
+            <li> Golf Course Front Gorgeous golf course view from entire back side of house!</li>
+        </ul>
+
+    </section>
+
+    <!--Policy =================================================================-->
+    <!-- Parallax 7 ----------------------------->
+    <section class="section_policy" id="policy">
+        <h2 class="section__title section__title--policy">
+            Cancellation Policy
+        </h2>
+        <p>
+            Your booking will not qualify for a refund based on your trip dates.
+            If you have upcoming trips, you can manage or cancel your booking in your traveler account.
+        </p>
+    </section>
+
+    <!-- House Rules =================================================================-->
+    <!-- Parallax 8 ------------------------------>
+    <section class="section_rules" id="rules">
+        <h2 class="section__title section__title--rules">
+            House Rules
+        </h2>
+        <ul>
+            <li> Children allowed</li>
+            <li> No pets</li>
+            <li> No parties/events</li>
+            <li> No smoking</li>
+            <li> Max Guests: 9</li>
+        </ul>
+
+    </section>
+    <!--Reviews =================================================================-->
+    <!-- Parallax 9 ------------------------------->
+    <button></button>
+        Review
+    </button>
+
+    <!--Footer =================================================================-->
+    <!-- Parallax 10 ------------------------------->
+    <footer class="footer">
+
+        <ul class="social-list">
+            <li class="social-list__link" href="https://www.instagram.com/">
+                <i class="fab fa-instagram"></i>
+            </li>
+            <li class="social-list_link" href="https://www.facebook.com/">
+                <i class="fab fa-twitter"></i>
+            </li>
+            <li class="social-list_link" href="https://gmail.com">
+                <i class="far fa-envelope"></i>
+            </li>
+        </ul>
+    </footer>
+
+    <!--  Speghetti -->
+
+    <script src="client/public/js/index.js"></script>
+    <script src="client/public/js/map.js"></script>
+</body>
+
+</html>

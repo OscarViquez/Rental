@@ -1,0 +1,270 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    /* fonts */
+    --ff-titles   : 'Lobster', 'sans-serif';
+    --ff-primary  : 'Archivo', 'sans-serif';
+    --ff-secondary: 'Source Sans Pro', 'monospace';
+    --ff-third    : 'Muli', 'monospace';
+    --ff-fourth   : 'Playfair Display', 'monospace';
+    /* thickness of text */
+    --fw-reg      : 300;
+    --fw-bold     : 900;
+    /* color variables */
+    --clr-light   : #ffffff;
+    --clr-dark    : #303030;
+    --clr-blue    : #99cccc;
+    --clr-green   : #8ee4af;
+    --clr-skyblue : #3b8beb;
+    /* height of headers/ body text */
+    --fs-h1       : 3rem;
+    --fs-h2       : 2.25rem;
+    --fs-h3       : 1.25rem;
+    --fs-body     : 1rem;
+    /* shadows */
+    --bs          : 0.25em 0.25em 0.75em rgba(0, 0, 0, .25),
+
+        0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
+}
+
+/* Media Queries Preset sizes */
+@media (min-width: 800px) {
+    :root {
+        --fs-h1  : 4.5rem;
+        --fs-h2  : 3.75rem;
+        --fs-h3  : 2.75rem;
+        --fs-h4  : 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+
+/* ==================================== GENERAL  =============================================  */
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--clr-light);
+    color           : var(--clr-dark);
+    margin          : 0;
+    font-family     : var(--ff-primary);
+    font-size       : var(--fs-body);
+    line-height     : 1.6;
+}
+
+section {
+    padding: 5em 2em;
+}
+
+/* ----- images that ARENT background images ------*/
+img {
+    display  : block;
+    max-width: 100%;
+}
+
+:focus {
+    outline: 3px solid var(--clr-acceent);
+    outline: 3px;
+}
+
+/* ----------------Buttons ----------------*/
+
+button {
+    display        : inline-block;
+    padding        : .5em 2.5em;
+    background     : transparent;
+    color          : var(--clr-dark);
+    text-decoration: none;
+    cursor         : pointer;
+    font-size      : .8rem;
+    text-transform : uppercase;
+    letter-spacing : 2px;
+    transition     : transform 200ms ease-in-out;
+
+}
+
+/* show more button */
+#show-more {
+    line-height: 20px;
+}
+
+
+/* =============================== Typography  =============================================  */
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+    margin     : 0;
+}
+
+h1 {
+    font-size  : var(--fs-h1);
+    font-family: var(--ff-fourth);
+}
+
+h2 {
+    font-size  : var(--fs-h2);
+    font-family: var(--ff-third);
+}
+
+h3 {
+    font-size: var(--fs-h3);
+}
+
+.section_title {
+    margin-bottom: .50em;
+}
+
+.section__pitch--intro {
+    display: block;
+}
+
+.section_subtitle {
+    margin: 0;
+
+}
+
+/* ----- subtitle section background ----------- */
+.section__title,
+.section__title-about {
+    background   : var(--clr-blue);
+    padding      : .25em 1em;
+    margin-bottom: 1em;
+}
+
+/* ------------- header section -------------- */
+/* the header section contains the navigation menu */
+header {
+    display        : flex;
+    justify-content: space-between;
+    padding        : 1em;
+}
+
+.logo {
+    max-width: 100px
+}
+
+.nav {
+    position  : fixed;
+    background: var(--clr-blue);
+    color     : var(--clr-light);
+    z-index   : 100;
+    top       : 0;
+    bottom    : 0;
+    left      : 0;
+    right     : 0;
+    transform : translateX(100%);
+    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+}
+
+.nav_link {
+    color          : inherit;
+    font-size      : var(--fs-h2);
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+
+.nav_list {
+    list-style     : none;
+    display        : flex;
+    height         : 100%;
+    flex-direction : column;
+    justify-content: space-evenly;
+    align-items    : center;
+    margin         : 0;
+    padding        : 0;
+}
+
+/* fix this later */
+
+.nav__link--title {
+    color      : var(--clr-dark);
+    font-family: var(--ff-third);
+}
+
+.nav__link:hover {
+    color           : var(--clr-light);
+    /* background-color: var(--clr-light); */
+}
+
+.nav-toggle {
+    padding   : .5em;
+    background: transparent;
+    border    : 0;
+    cursor    : pointer;
+    position  : absolute;
+    right     : 1em;
+    top       : 1em;
+    z-index   : 1000;
+}
+
+.nav-open .nav {
+    transform: translateX(0);
+
+}
+
+.nav-open .nav-toggle {
+    position: fixed;
+}
+
+.nav-open .hamburger {
+    transform: rotate(.625turn);
+}
+
+.nav-open .hamburger::before {
+    transform: rotate(90deg) translateX(-6px);
+}
+
+/* .nav-open .hamburger::before {
+    
+} */
+
+.nav-open .hamburger::after {
+    opacity: 0;
+}
+
+.hamburger {
+    display : block;
+    /* we are using relative since we will use other things that will have absolute positiion */
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    background   : var(--clr-dark);
+    width        : 2em;
+    height       : 3px;
+    border-radius: 1em;
+    transition   : transform 250ms ease-in-out;
+}
+
+
+.hamburger::before,
+.hamburger::after {
+    /* sudo elemets wont work unless you add a content prop */
+    content : '';
+    position: absolute;
+    left    : 0;
+    right   : 0;
+}
+
+.hamburger::before {
+    top: 6px;
+}
+
+.hamburger::after {
+    bottom: 6px;
+}

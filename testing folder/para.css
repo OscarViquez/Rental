@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    /* fonts */
+    --ff-titles   : 'Lobster', 'sans-serif';
+    --ff-primary  : 'Archivo', 'sans-serif';
+    --ff-secondary: 'Source Sans Pro', 'monospace';
+    --ff-third    : 'Muli', 'monospace';
+    --ff-fourth   : 'Playfair Display', 'monospace';
+    /* thickness of text */
+    --fw-reg      : 300;
+    --fw-bold     : 900;
+    /* color variables */
+    --clr-light   : #ffffff;
+    --clr-dark    : #303030;
+    --clr-blue    : #99cccc;
+    --clr-green   : #8ee4af;
+    --clr-skyblue : #3b8beb;
+    /* height of headers/ body text */
+    --fs-h1       : 3rem;
+    --fs-h2       : 2.25rem;
+    --fs-h3       : 1.25rem;
+    --fs-body     : 1rem;
+    /* shadows */
+    --bs          : 0.25em 0.25em 0.75em rgba(0, 0, 0, .25),
+
+        0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
+}
+
+/* Media Queries Preset sizes */
+@media (min-width: 800px) {
+    :root {
+        --fs-h1  : 4.5rem;
+        --fs-h2  : 3.75rem;
+        --fs-h3  : 2.75rem;
+        --fs-h4  : 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+
+
+body{
+    margin: 0;
+    height: 100vh;
+    font-size: 5em;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    
+   
+}
+
+section{
+    height: 100%;
+    
+}
+
+ul{
+    font-size: 100px;
+    /* removes bullet points */
+    list-style-type: none;
+    /* removes default margin and paddings */
+    padding: 0;
+    margin: 0;
+    /* uses grid to organize them */
+    display: grid;
+    /*  */
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    align-items: middle;
+    place-items: center;
+    height: 100vh;
+}
+
+
+/* span {
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: black;
+    border-radius: 50%;
+} */
+
+.subtitle {
+  font-size: 50px;
+}
+
+.text {
+    font-size: 25px;
+}
+
+img {
+    height: 25;
+    width: 50;
+}

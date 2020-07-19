@@ -1,0 +1,24 @@
+ <!-- Image of property -->
+        <!-- <div id="cf7" class="shadow">
+            <img class="opaque" src="./images/HouseOverview.jpg" alt="View of House" style="width: 400px;">
+            <img src="images/PoolwithGolf.jpg" alt="Porch" style="width: 400px;">
+            <img src="images/PorchNight.jpg" alt="Porch at Night" style="width: 400px;">
+            <img src="images/BedroomBed3.jpg" alt="Bedroom" style="width: 400px;">
+        </div>
+        <p id="cf7_controls">
+            <span class="selected">Image 1</span>
+            <span>Image 2</span>
+            <span>Image 3</span>
+            <span>Image 4</span>
+        </p> -->
+
+        // $("#cf7_controls").on('click', 'span', function() {
+    //   $("#cf7 img").removeClass("opaque");
+  
+    //   var newImage = $(this).index();
+  
+    //   $("#cf7 img").eq(newImage).addClass("opaque");
+  
+    //   $("#cf7_controls span").removeClass("selected");
+    //   $(this).addClass("selected");
+    // });
