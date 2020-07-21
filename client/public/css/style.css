@@ -20,6 +20,7 @@
     --clr-blue    : #99cccc;
     --clr-green   : #8ee4af;
     --clr-skyblue : #3b8beb;
+    --clr-navy    : #517FCDff;
     /* height of headers/ body text */
     --fs-h1       : 3rem;
     --fs-h2       : 2.25rem;
@@ -29,6 +30,9 @@
     --bs          : 0.25em 0.25em 0.75em rgba(0, 0, 0, .25),
 
         0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
+
+    --main-rad    : 5px;
+    --main-padding: 5px;
 }
 
 /* Media Queries Preset sizes */
@@ -47,6 +51,9 @@
 
 html {
     scroll-behavior: smooth;
+    text-align     : center;
+
+
 }
 
 body {
@@ -73,7 +80,7 @@ img {
     outline: 3px;
 }
 
-/* ----------------Buttons ----------------*/
+/*  Buttons ----------------*/
 
 button {
     display        : inline-block;
@@ -94,19 +101,22 @@ button {
     line-height: 20px;
 }
 
+/* =============================== Parallax Effect =============================== */
+
 
 /* =============================== Typography  =============================================  */
 
 h1,
 h2,
 h3 {
-    line-height: 1;
-    margin     : 0;
+    /* line-height: 1; */
+    margin: 0;
 }
 
 h1 {
     font-size  : var(--fs-h1);
     font-family: var(--ff-fourth);
+
 }
 
 h2 {
@@ -131,20 +141,30 @@ h3 {
 
 }
 
-/* ----- subtitle section background ----------- */
-.section__title,
-.section__title-about {
-    background   : var(--clr-blue);
-    padding      : .25em 1em;
-    margin-bottom: 1em;
+ul {
+    list-style-type: none;
 }
 
-/* ------------- header section -------------- */
+
+/* ----- subtitle section background ----------- */
+/* .section__title,
+.section__title-about { */
+/* background   : var(--clr-blue); */
+/* padding      : .25em 1em;
+    margin-bottom: 1em;
+} */
+
+
+
+/* ===============================  header section ======================================================= - */
 /* the header section contains the navigation menu */
 header {
-    display        : flex;
-    justify-content: space-between;
-    padding        : 1em;
+    display            : flex;
+    justify-content    : space-between;
+    padding            : .5em;
+    /* box-shadow         : var(--bs);
+    
+    background         : var(--clr-navy); */
 }
 
 .logo {
@@ -153,7 +173,7 @@ header {
 
 .nav {
     position  : fixed;
-    background: var(--clr-blue);
+    background: var(--clr-navy);
     color     : var(--clr-light);
     z-index   : 100;
     top       : 0;
@@ -172,7 +192,7 @@ header {
 
 a {
     text-decoration: none;
-    
+
 }
 
 
@@ -195,7 +215,7 @@ a {
 }
 
 .nav__link:hover {
-    color           : var(--clr-light);
+    color              : var(--clr-light);
     /* background-color: var(--clr-light); */
 }
 
@@ -244,7 +264,7 @@ a {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background   : var(--clr-dark);
+    background   : var(--clr-light);
     width        : 2em;
     height       : 3px;
     border-radius: 1em;
@@ -267,4 +287,76 @@ a {
 
 .hamburger::after {
     bottom: 6px;
+}
+
+
+/*  ===============================  Intro section ======================================================= */
+
+.intro {
+    display              : grid;
+    height               : 100vh;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows   : 0.9fr 0.9fr 2.2fr;
+    grid-template-areas  :
+        "nav nav nav"
+        "section__pitch--intro section__pitch--intro section__pitch--intro"
+        "section__subtitle--pitch section__subtitle--pitch section__subtitle--pitch"
+        ;
+    /* font-family: monospace; */
+    grid-gap       : 0.2rem;
+    /* margin      : 50px; */
+    background     : url("../images/BeachView.jpg");
+    background-size: cover;
+}
+
+/* 
+                col 1(12fr)              col 2(2fr)         col3
+row 1(0.9fr)------------------------------------------------------------------
+
+row 2(0.9fr)------------------------------------------------------------------
+
+row 3(2.2fr)------------------------------------------------------------------
+
+
+
+
+*/
+
+.section__pitch--intro {
+    /* background   : #a7ffeb; */
+    color           : #ffffff;
+    grid-area       : section__pitch--intro;
+    /* border-radius: var(--main-rad);
+    padding-top     : var(--main-padding); */
+}
+
+.section__subtitle--pitch {
+    /* background   : #84ffff; */
+    color           : #ffffff;
+    grid-area       : section__subtitle--pitch;
+    /* border-radius: var(--main-rad);
+    padding-top     : var(--main-padding); */
+    margin          : 1rem;
+}
+
+header {
+    grid-area: nav;
+}
+
+
+
+@media (min-width: 600px) {
+    .intro {
+        display: grid;
+        height: 100vh;
+        /* you right the 1fr 4 times in order to get 4 columns+ */
+        grid-template-columns: 1fr;
+        grid-template-rows: .4fr 1.2fr 1.2fr;
+        grid-template-areas:
+         "nav"
+         "section__pitch--intro"
+         "section__subtitle--pitch"
+         
+         ;
+    }
 }

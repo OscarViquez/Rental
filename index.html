@@ -30,77 +30,81 @@
 <body>
 
     <!-- NAVIGATION MENU ========================================================= -->
-    <header>
-        <div class="logo">
-            <img src="" alt="logo">
-        </div>
-        <button class="nav-toggle">
-            <span class="hamburger"></span>
-        </button>
-        <nav class="nav">
-            <ul class="nav_list">
-                <li class="nav__buttons">
-                    <a href="#about" class="nav__link">
-                        <h2 class="nav__link--title">About this place</h2>
-                    </a>
-                </li>
-
-                <li class="nav__buttons">
-                    <a href="#ameneites" class="nav__link">
-                        <h2 class="nav__link--title">Ameneites</h2>
-                    </a>
-                </li>
-
-                <li class="nav__buttons">
-                    <a href="#safety" class="nav__link">
-                        <h2 class="nav__link--title">Safety</h2>
-                    </a>
-                </li>
-
-                <li class="nav__buttons">
-                    <a href="#rooms" class="nav__link">
-                       <h2 class="nav__link--title"> Rooms </h2>
-                    </a>
-                </li>
-
-                <li class="nav__buttons">
-                    <a href="#location" class="nav__link">
-                        <h2 class="nav__link--title">Location</h2>
-                    </a>
-                </li>
-
-                <!-- <li class="nav__buttons">
-                    <a href="#policies" class="nav__link"> Policies </a>
-                </li> -->
-                <!-- <li class="nav__buttons">
-                    <a href="#reviews" class="nav__link"> Reviews </a>
-                </li> -->
-            </ul>
-        </nav>
-
-    </header>
-
-    <!-- introduction / Front page =========================================================-->
-    <!-- Parallax 1 ---------------------------------->
     <section class="intro" id="front">
+        <header>
+            <!-- <div class="logo">
+                <img src="" alt="logo">
+            </div> -->
+            <button class="nav-toggle">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav_list">
+                    <li class="nav__buttons">
+                        <a href="#about" class="nav__link">
+                            <h2 class="nav__link--title">About this place</h2>
+                        </a>
+                    </li>
 
-        <h1 class="section__title section__pitch-intro"> Looking for a place to stay ...</h1>
-        <p class="section__subtitle section__subtitle-pitch"> pitch line</p>
-        <img src="" alt="img of house">
-        <h2 class="section__title"> Price: $550 per night </h2>
+                    <li class="nav__buttons">
+                        <a href="#amenities" class="nav__link">
+                            <h2 class="nav__link--title">Ameneites</h2>
+                        </a>
+                    </li>
 
-        <h4> Check-in / Check out time </h4>
+                    <li class="nav__buttons">
+                        <a href="#safety" class="nav__link">
+                            <h2 class="nav__link--title">Safety</h2>
+                        </a>
+                    </li>
+
+                    <li class="nav__buttons">
+                        <a href="#rooms" class="nav__link">
+                            <h2 class="nav__link--title"> Rooms </h2>
+                        </a>
+                    </li>
+
+                    <li class="nav__buttons">
+                        <a href="#location" class="nav__link">
+                            <h2 class="nav__link--title">Location</h2>
+                        </a>
+                    </li>
+
+                    <!-- <li class="nav__buttons">
+                        <a href="#policies" class="nav__link"> Policies </a>
+                    </li> -->
+                    <!-- <li class="nav__buttons">
+                        <a href="#reviews" class="nav__link"> Reviews </a>
+                    </li> -->
+                </ul>
+            </nav>
+
+        </header>
+
+        <!-- introduction / Front page =========================================================-->
+
+
+
+        <h1 class="section__title section__pitch--intro"> Want to vacation at Hilton Head Island?</h1>
+        <h3 class="section__subtitle section__subtitle--pitch"> Book now at our cozy home rental! </h3>
+
+
+
+        <!-- <img src="client/public/images/BeachPoolAngle.jpg" alt="img of house" id="intro__img"> -->
+        <!-- <h2 class="section__title" id="section__title--price"> Price: $550 per night </h2> -->
+
+        <!-- <h4> Check-in / Check out time </h4>
         <ul>
             <li> Check-in after 4:00PM </li>
             <li> Check out before 10:00AM</li>
-        </ul>
+        </ul> -->
 
     </section>
     <!-- About this place =================================================================-->
     <!-- Parallax 2 ---------------------------------->
     <section class="section__about" id="about">
         <h2 class="section__title section__title-about"> About this place <i class="fas fa-info-circle"></i> </h2>
-        <button onclick="hideToggle()"> Show more </button>
+        <button onclick="hideToggle()" id="show-more"> Show more </button>
         <p id="long__paragraph"> "Heron on Eleven"
             22 Stoney Creek Road
             Coastalcandb
@@ -405,7 +409,7 @@
     <!--Reviews =================================================================-->
     <!-- Parallax 9 ------------------------------->
     <button></button>
-        Review
+    Review
     </button>
 
     <!--Footer =================================================================-->
