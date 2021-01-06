@@ -4,7 +4,7 @@
   "description": "Unit 09 Node.js and ES6+ Homework: Developer Profile Generator",
   "main": "app.js",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "inquirer": "^7.1.0"
   },
   "devDependencies": {},
